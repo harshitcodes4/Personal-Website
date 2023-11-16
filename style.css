@@ -1,0 +1,558 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: sans-serif, cursive;
+}
+
+/* nav styling */
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #000;
+    color: #fff;
+    padding: 1rem;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+}
+
+.logo span {
+    color: #9c27b0;
+}
+
+.navlinks {
+    display: flex;
+}
+
+.navlinks li a {
+    color: #fff;
+    margin: 1rem;
+}
+
+.navlinks li a:hover {
+    color: #9c27b0;
+}
+
+/* hero styling */
+.hero {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 8rem 4rem;
+}
+
+.featured-txt {
+    width: 35rem;
+}
+
+.line1 {
+    font-size: 2.2rem;
+}
+
+.wave {
+    animation-name: wave-animation; /* Refers to the name of your @keyframes element below */
+    animation-duration: 2.5s; /* Change to speed up or slow down */
+    animation-iteration-count: infinite; /* Never stop waving :) */
+    transform-origin: 70% 70%; /* Pivot around the bottom-left palm */
+    display: inline-block;
+  }
+
+@keyframes wave-animation {
+    0% { 
+        transform: rotate( 0.0deg) 
+    }
+    10% { 
+        transform: rotate(14.0deg) /* The following five values can be played with to make the waving more or less extreme */
+    } 
+    20% { 
+        transform: rotate(-8.0deg) 
+    }
+    30% { 
+        transform: rotate(14.0deg) 
+    }
+    40% { 
+        transform: rotate(-4.0deg) 
+    }
+    50% { 
+        transform: rotate(10.0deg) 
+    }
+    60% { 
+        transform: rotate( 0.0deg) /* Reset for the last half to pause */
+    } 
+    100% { 
+        transform: rotate( 0.0deg) 
+    }
+}
+
+.line2 {
+    font-size: 3.8rem;
+}
+
+.line3 {
+    font-size: 1.8rem;
+    color: #9c27b0;
+}
+
+.download-btn {
+    margin-top: 1rem;
+    padding: 0.6rem; 
+    border-radius: 1rem; 
+    border: 2px solid #000;
+    background-color: #9c27b0;
+    font-weight: 700;
+    cursor: pointer;                                                                                                       
+}
+
+.download-btn:hover {
+    background-color: #921da7;
+}
+
+.download-btn a {
+    color: #fff;
+}
+
+.image {
+    width: 22rem;
+}
+
+img {
+    width: 100%;
+}
+
+/* about styling */
+.about {
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(120deg, #9c27b0 30%, wheat 70%);
+    padding: 7rem;
+}
+
+.left {
+    text-align: center;
+    line-height: 1.25rem;
+    transform: translateX(-100%); /* Initially off-screen to the left */
+    transition: transform 1s ease;
+}
+
+.active {
+    transform: translateX(0); /* Slide in from the left */
+}
+
+.content {
+    padding: 2rem 0;
+}
+
+.social-links {
+    font-size: 1.5rem;
+}
+
+.social-links a {
+    margin: 0.5rem;
+}
+
+.social-links i:hover {
+    transform: scale(1.1);
+}
+
+.fa-youtube {
+    color: red;
+}
+
+.fa-instagram {
+    color: rgb(255, 0, 0);
+}
+
+.fa-twitter {
+    color: rgb(0, 128, 255);
+}
+
+.fa-linkedin {
+    color: rgb(0, 89, 255);
+}
+
+/* skills styling */
+.skills {
+    width: 100%;
+    height: 100%;
+    padding: 3rem;
+}
+
+.skills h2 {
+    text-align: center;
+}
+
+.skills .main {
+    margin: 3rem auto;
+}
+
+.row1, .row2 {
+    display: flex;
+}
+
+.col1, .col2, .col3, .col4 {
+    padding: 0.75rem;
+    width: 50%;
+}
+
+.skills .main i {
+    font-size: 2.5rem;
+}
+
+.fa-code {
+    color: brown;
+    margin-right: 0.5rem;
+}
+
+.fa-css3 {
+    color: rgb(44, 119, 181);
+}
+
+.fa-bootstrap {
+    color: purple;
+}
+
+.fa-js {
+    color: rgb(255, 179, 0);
+}
+
+h4 {
+    padding: 0.75rem 0;
+}
+
+/* projects styling */
+.projects {
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(120deg, #9c27b0 30%, wheat 70%);
+    padding: 3rem;
+}
+
+.projects h2 {
+    text-align: center;
+    padding-top: 1rem;
+}
+
+.projects .main {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 3rem;
+    margin: 4rem auto;
+}
+
+.project-card {
+    width: 22rem;
+}
+
+.card img {
+    width: 100%;
+    margin-bottom: 1rem;
+    box-shadow: 0 0 20px #333;
+    border-radius: 1rem;
+}
+
+.card img:hover {
+    transform: scale(1.03);
+}
+
+figcaption {
+    font-weight: 700;
+    padding-bottom: 1rem;
+}
+
+/* contact styling */
+.contact {
+    width: 100%;
+    height: 100%;
+    padding: 3rem;
+}
+
+.contact h2, .msg {
+    text-align: center;
+}
+
+.contact h2 {
+    padding-bottom: 0.5rem;
+}
+
+form {
+    max-width: 25rem;
+    margin: 2rem auto;
+    display: grid;
+    gap: 1rem;
+}
+
+input, textarea {
+    width: 25rem;
+    padding: 0.5rem;
+    outline: 0;
+    border: 2px solid #000;
+    border-radius: 0.25rem;
+    font-weight: 700;
+}
+
+.snd-btn {
+    padding: 0.6rem;
+    width: 6rem;
+    border: 2px solid #000;
+    border-radius: 0.25rem;
+    background-color: #9c27b0; 
+    color: #fff;
+    font-weight: 700;
+    cursor: pointer;  
+}
+
+.snd-btn:hover {
+    background-color: #921da7;
+}
+
+/* footer styling */
+.footer {
+    text-align: center;
+    background-color: #000;
+    color: #fff;
+    padding: 1.5rem;
+}
+
+.footer a {
+    color: #9c27b0;
+}
+
+/* Customize the main scroll bar */
+::-webkit-scrollbar {
+    width: 12px; /* You can adjust the width as needed */
+}
+  
+/* Customize the thumb (draggable part) of the scroll bar */
+::-webkit-scrollbar-thumb {
+    background-color: #9c27b0; /* Change to your desired color */
+    border-radius: 6px; /* Adjust the radius as needed */
+}
+  
+/* Customize the track (the non-draggable part) of the scroll bar */
+::-webkit-scrollbar-track {
+    background-color: #f2f2f2; /* Change to your desired color */
+}
+  
+/* Customize the corner where two scroll bars meet */
+::-webkit-scrollbar-corner {
+    background-color: transparent;
+}
+
+/* media queries */
+@media (max-width: 1024px) {
+    .line1 {
+        font-size: 1.8rem;
+    }
+    .line2 {
+        font-size: 2.8rem;
+    }
+    .line3 {
+        font-size: 1.3rem;
+    }
+    .image {
+        width: 17rem;
+    }
+    .download-btn {
+        padding: 0.5rem;
+    }
+
+    .about {
+        padding: 6rem;
+    }
+    .content {
+        padding: 1.8rem 0;
+    }
+
+    .skills {
+        padding: 2.5rem;
+    }
+
+    .contact {
+        padding: 2rem;
+    }
+    input, textarea {
+        padding: 0.4rem;
+    }
+    .snd-btn {
+        padding: 0.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .navlinks li a {
+        margin: 0.6rem;
+    }
+    
+    .hero {
+        padding: 8rem 2rem;
+    }
+    .featured-txt {
+        width: 30rem;
+    }
+    .line1 {
+        font-size: 1.4rem;
+    }
+    .line2 {
+        font-size: 2.5rem;
+    }
+    .line3 {
+        font-size: 1.2rem;
+    }
+    .image {
+        width: 16rem;
+    }
+    .download-btn {
+        padding: 0.4rem;
+    }
+    
+    .about {
+        padding: 4rem;
+    }
+    .content {
+        padding: 1.6rem 0;
+    }
+
+    .skills {
+        padding: 2.5rem 1rem;
+    }
+    .skills .main {
+        margin: 2rem auto;
+    }
+    .col1, .col2, .col3, .col4 {
+        padding: 0.5rem;
+    }
+    .skills .main i {   
+        font-size: 2.2rem;
+    }
+    h4 {
+        padding: 0.5rem 0;
+    }
+
+    .projects .main {
+        gap: 2rem;
+        margin: 3rem auto;
+    }
+    figcaption span {
+        display: none;
+    }
+
+    .contact {
+        padding: 1.5rem;
+    }
+    .contact h2 {
+        padding-bottom: 0.2rem;
+    }
+    form {
+        max-width: 22rem;
+        margin: 1.5rem auto;
+    }
+    input, textarea {
+        padding: 0.3rem;
+        width: 22rem;
+    }
+    .snd-btn {
+        padding: 0.4rem;
+        width: 5rem;
+    }
+}
+
+@media (max-width: 650px) {
+    .navlinks {
+        display: none;
+    }
+
+    .hero {
+        flex-direction: column-reverse;
+        padding: 6rem 2rem;
+    }
+    .featured-txt {
+        width: 25rem;
+    }
+
+    .row1, .row2 {
+        display: block;
+    }
+    .col1, .col2, .col3, .col4 {
+        width: 100%;
+    }
+
+    .projects {
+        padding: 1.8rem;
+    }
+    .projects h2 {
+        padding-top: 3rem;
+    }
+    .project-card {
+        width: 16rem;
+    }
+    .projects .main {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    form {
+        max-width: 20rem;
+    }
+    input, textarea {
+        width: 20rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .nav {
+        padding: 0.7rem;
+    }
+
+    .featured-txt {
+        padding-left: 0.8rem;
+        width: 19rem;
+    }
+    .line1 {
+        font-size: 1.2rem;
+    }
+    .line2 {
+        font-size: 2rem;
+    }
+    .line3 {
+        font-size: 1rem;
+    }
+    .image {
+        width: 15rem;
+    }
+    .download-btn {
+        padding: 0.3rem;
+    }
+
+    .about {
+        padding: 2rem;
+    }
+    .content {
+        padding: 1.4rem 0;
+    }
+
+    .skills .main i {   
+        font-size: 2.2rem;
+    }
+
+    .projects {
+        padding: 2rem;
+    }
+
+    form {
+        max-width: 16rem;
+    }
+    input, textarea {
+        width: 16rem;
+    }
+
+    .footer {
+        padding: 1.2rem;
+    }
+}
