@@ -101,9 +101,9 @@
 
 .download-btn {
     margin-top: 1rem;
-    padding: 0.6rem; 
-    border-radius: 1rem; 
-    border: 2px solid #000;
+    padding: 0.79rem; 
+    border-radius: 2rem; 
+    border: none;
     background-color: #9c27b0;
     font-weight: 700;
     cursor: pointer;                                                                                                       
@@ -131,6 +131,11 @@ img {
     height: 100%;
     background-image: linear-gradient(120deg, #9c27b0 30%, wheat 70%);
     padding: 7rem;
+}
+
+.about h2, .projects h2 {
+    color: white;
+    text-shadow: 1px 1px 1px #000;
 }
 
 .left {
@@ -261,7 +266,7 @@ h4 {
 }
 
 figcaption {
-    font-weight: 700;
+    font-weight: 500;
     padding-bottom: 1rem;
 }
 
@@ -291,16 +296,16 @@ input, textarea {
     width: 25rem;
     padding: 0.5rem;
     outline: 0;
-    border: 2px solid #000;
+    border: 1.5px solid #000;
     border-radius: 0.25rem;
-    font-weight: 700;
+    font-weight: 500;
 }
 
 .snd-btn {
-    padding: 0.6rem;
+    padding: 0.69rem;
     width: 6rem;
-    border: 2px solid #000;
-    border-radius: 0.25rem;
+    border: none;
+    border-radius: 0.5rem;
     background-color: #9c27b0; 
     color: #fff;
     font-weight: 700;
@@ -359,7 +364,7 @@ input, textarea {
         width: 17rem;
     }
     .download-btn {
-        padding: 0.5rem;
+        padding: 0.69rem;
     }
 
     .about {
@@ -380,7 +385,7 @@ input, textarea {
         padding: 0.4rem;
     }
     .snd-btn {
-        padding: 0.5rem;
+        padding: 0.59rem;
     }
 }
 
@@ -408,7 +413,7 @@ input, textarea {
         width: 16rem;
     }
     .download-btn {
-        padding: 0.4rem;
+        padding: 0.59rem;
     }
     
     .about {
@@ -457,7 +462,7 @@ input, textarea {
         width: 22rem;
     }
     .snd-btn {
-        padding: 0.4rem;
+        padding: 0.49rem;
         width: 5rem;
     }
 }
@@ -527,7 +532,7 @@ input, textarea {
         width: 15rem;
     }
     .download-btn {
-        padding: 0.3rem;
+        padding: 0.49rem;
     }
 
     .about {
