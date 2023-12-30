@@ -211,7 +211,7 @@ img {
 
 .fa-code {
     color: brown;
-    margin-right: 0.5rem;
+    margin-right: 0.6rem;
 }
 
 .fa-css3 {
@@ -235,19 +235,18 @@ h4 {
     width: 100%;
     height: 100%;
     background-image: linear-gradient(120deg, #9c27b0 30%, wheat 70%);
-    padding: 3rem;
 }
 
 .projects h2 {
     text-align: center;
-    padding-top: 1rem;
+    padding: 2rem 0;
 }
 
-.projects .main {
+.projects .main, .main2 {
     display: flex;
     justify-content: space-evenly;
     gap: 3rem;
-    margin: 4rem auto;
+    margin: 0 3rem 0;
 }
 
 .project-card {
@@ -256,18 +255,20 @@ h4 {
 
 .card img {
     width: 100%;
-    margin-bottom: 1rem;
     box-shadow: 0 0 20px #333;
     border-radius: 1rem;
+    filter: blur();
 }
 
 .card img:hover {
+    filter: none;
     transform: scale(1.03);
 }
 
 figcaption {
     font-weight: 500;
-    padding-bottom: 1rem;
+    margin-top: 0.75rem;
+    margin-bottom: 2rem;
 }
 
 /* contact styling */
@@ -361,7 +362,7 @@ input, textarea {
         font-size: 1.3rem;
     }
     .image {
-        width: 17rem;
+        width: 18rem;
     }
     .download-btn {
         padding: 0.69rem;
@@ -376,6 +377,10 @@ input, textarea {
 
     .skills {
         padding: 2.5rem;
+    }
+
+    .project-card {
+        width: 18rem;
     }
 
     .contact {
@@ -409,9 +414,6 @@ input, textarea {
     .line3 {
         font-size: 1.2rem;
     }
-    .image {
-        width: 16rem;
-    }
     .download-btn {
         padding: 0.59rem;
     }
@@ -433,15 +435,18 @@ input, textarea {
         padding: 0.5rem;
     }
     .skills .main i {   
-        font-size: 2.2rem;
+        font-size: 2.25rem;
+    }
+    .fa-code {
+        margin-right: 1rem;
     }
     h4 {
         padding: 0.5rem 0;
     }
 
-    .projects .main {
+    .projects .main, .main2 {
         gap: 2rem;
-        margin: 3rem auto;
+        margin: 0 2rem 0;
     }
     figcaption span {
         display: none;
@@ -479,6 +484,9 @@ input, textarea {
     .featured-txt {
         width: 25rem;
     }
+    .image {
+        width: 16rem;
+    }
 
     .row1, .row2 {
         display: block;
@@ -487,19 +495,20 @@ input, textarea {
         width: 100%;
     }
 
-    .projects {
-        padding: 1.8rem;
-    }
     .projects h2 {
-        padding-top: 3rem;
+        padding: 1.75rem 0;
+    }
+    .projects .main, .main2 {
+        flex-direction: column;
+        align-items: center;
+        gap: 0;
     }
     .project-card {
         width: 16rem;
     }
-    .projects .main {
-        flex-direction: column;
-        align-items: center;
-        gap: 1rem;
+    figcaption {
+        margin-top: 0.5rem;
+        margin-bottom: 1.75rem;
     }
 
     form {
@@ -528,9 +537,6 @@ input, textarea {
     .line3 {
         font-size: 1rem;
     }
-    .image {
-        width: 15rem;
-    }
     .download-btn {
         padding: 0.49rem;
     }
@@ -543,11 +549,10 @@ input, textarea {
     }
 
     .skills .main i {   
-        font-size: 2.2rem;
+        font-size: 2rem;
     }
-
-    .projects {
-        padding: 2rem;
+    .fa-code {
+        margin-right: 1.35rem;
     }
 
     form {
