@@ -1,6 +1,6 @@
 // typed animation script
 let typed = new Typed("#element", {
-    strings: ["Frontend Developer", "And a Youtuber"],
+    strings: ["Frontend Web Developer", "And a Youtuber"],
     typeSpeed: 50,
     backSpeed: 50,
     loop: true, 
