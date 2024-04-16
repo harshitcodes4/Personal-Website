@@ -51,7 +51,7 @@
     width: 35rem;
 }
 
-.line1 {
+.txt1 {
     font-size: 2.2rem;
 }
 
@@ -90,11 +90,11 @@
     }
 }
 
-.line2 {
+.txt2 {
     font-size: 3.8rem;
 }
 
-.line3 {
+.txt3 {
     font-size: 1.8rem;
     color: #9c27b0;
 }
@@ -242,7 +242,7 @@ h4 {
     padding: 2rem 0;
 }
 
-.projects .main, .main2 {
+.projects .line-one, .line-two {
     display: flex;
     justify-content: space-evenly;
     gap: 3rem;
@@ -352,13 +352,13 @@ input, textarea {
 
 /* media queries */
 @media (max-width: 1024px) {
-    .line1 {
+    .txt1 {
         font-size: 1.8rem;
     }
-    .line2 {
+    .txt2 {
         font-size: 2.8rem;
     }
-    .line3 {
+    .txt3 {
         font-size: 1.3rem;
     }
     .image {
@@ -405,13 +405,13 @@ input, textarea {
     .featured-txt {
         width: 30rem;
     }
-    .line1 {
+    .txt1 {
         font-size: 1.4rem;
     }
-    .line2 {
+    .txt2 {
         font-size: 2.5rem;
     }
-    .line3 {
+    .txt3 {
         font-size: 1.2rem;
     }
     .download-btn {
@@ -444,7 +444,7 @@ input, textarea {
         padding: 0.5rem 0;
     }
 
-    .projects .main, .main2 {
+    .projects .line-one, .line-two {
         gap: 2rem;
         margin: 0 2rem 0;
     }
@@ -498,7 +498,7 @@ input, textarea {
     .projects h2 {
         padding: 1.75rem 0;
     }
-    .projects .main, .main2 {
+    .projects .line-one, .line-two {
         flex-direction: column;
         align-items: center;
         gap: 0;
@@ -528,13 +528,13 @@ input, textarea {
         padding-left: 0.8rem;
         width: 19rem;
     }
-    .line1 {
+    .txt1 {
         font-size: 1.2rem;
     }
-    .line2 {
+    .txt2 {
         font-size: 2rem;
     }
-    .line3 {
+    .txt3 {
         font-size: 1rem;
     }
     .download-btn {
@@ -552,7 +552,7 @@ input, textarea {
         font-size: 2rem;
     }
     .fa-code {
-        margin-right: 1.25rem;
+        margin-right: 1.3rem;
     }
 
     form {
