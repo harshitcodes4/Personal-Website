@@ -170,30 +170,28 @@ img {
 }
 
 .fa-instagram {
-    color: rgb(255, 0, 0);
-}
-
-.fa-twitter {
-    color: rgb(0, 128, 255);
-}
-
-.fa-linkedin {
-    color: rgb(0, 89, 255);
+    color: orangered;
 }
 
 /* skills styling */
 .skills {
     width: 100%;
     height: 100%;
-    padding: 3rem;
+    padding: 3.75rem;
 }
 
-.skills h2 {
+.skills h2, .contact h2 {
     text-align: center;
+    padding-bottom: 0.5rem;
+}
+
+h5 {
+    text-align: center;
+    font-weight: normal;
 }
 
 .skills .main {
-    margin: 3rem auto;
+    margin: 3rem auto 0;
 }
 
 .row1, .row2 {
@@ -201,29 +199,44 @@ img {
 }
 
 .col1, .col2, .col3, .col4 {
-    padding: 0.75rem;
+    padding: 0.75rem 0.75rem 0;
     width: 50%;
 }
 
-.skills .main i {
-    font-size: 2.5rem;
+.col1, .col2 {
+    padding-bottom: 0.75rem;
 }
 
-.fa-code {
-    color: brown;
-    margin-right: 0.6rem;
+.fa-html5 {
+    color: #E44D26;
+    font-size: 2.7rem;
+    margin-right: 0.25rem;
 }
 
-.fa-css3 {
-    color: rgb(44, 119, 181);
+.fa-css3-alt {
+    color: #1572B6;
+    font-size: 2.7rem;
 }
 
 .fa-bootstrap {
-    color: purple;
+    color: #563D7C;
+    font-size: 2.5rem;
 }
 
 .fa-js {
-    color: rgb(255, 179, 0);
+    color: #F7DF1E;
+    font-size: 2.5rem;
+}
+
+.fa-git-alt {
+    color: #F05032;
+    font-size: 2.7rem;
+    margin-right: 0.25rem;
+}
+
+.fa-github {
+    color: #181717;
+    font-size: 2.5rem;
 }
 
 h4 {
@@ -278,17 +291,13 @@ figcaption {
     padding: 3rem;
 }
 
-.contact h2, .msg {
+.msg {
     text-align: center;
-}
-
-.contact h2 {
-    padding-bottom: 0.5rem;
 }
 
 form {
     max-width: 25rem;
-    margin: 2rem auto;
+    margin: 2rem auto 0;
     display: grid;
     gap: 1rem;
 }
@@ -376,7 +385,10 @@ input, textarea {
     }
 
     .skills {
-        padding: 2.5rem;
+        padding: 3rem;
+    }
+    .skills .main {
+        margin: 2.25rem auto 0;
     }
 
     .project-card {
@@ -429,16 +441,19 @@ input, textarea {
         padding: 2.5rem 1rem;
     }
     .skills .main {
-        margin: 2rem auto;
+        margin: 2rem auto 0;
     }
     .col1, .col2, .col3, .col4 {
-        padding: 0.5rem;
+        padding: 0.5rem 0.5rem 0;
     }
-    .skills .main i {   
+    .col1, .col2 {
+        padding-bottom: 0.5rem;
+    }
+    .fa-html5, .fa-css3-alt, .fa-git-alt {
+        font-size: 2.45rem;
+    }
+    .fa-bootstrap, .fa-js, .fa-github {
         font-size: 2.25rem;
-    }
-    .fa-code {
-        margin-right: 1rem;
     }
     h4 {
         padding: 0.5rem 0;
@@ -452,15 +467,8 @@ input, textarea {
         display: none;
     }
 
-    .contact {
-        padding: 1.5rem;
-    }
-    .contact h2 {
-        padding-bottom: 0.2rem;
-    }
     form {
         max-width: 22rem;
-        margin: 1.5rem auto;
     }
     input, textarea {
         padding: 0.3rem;
@@ -493,6 +501,9 @@ input, textarea {
     }
     .col1, .col2, .col3, .col4 {
         width: 100%;
+    }
+    .col3 {
+        padding-bottom: 0.5rem;
     }
 
     .projects h2 {
@@ -548,11 +559,11 @@ input, textarea {
         padding: 1.4rem 0;
     }
 
-    .skills .main i {   
-        font-size: 2rem;
+    .fa-html5, .fa-css3-alt, .fa-git-alt {
+        font-size: 2.2rem;
     }
-    .fa-code {
-        margin-right: 1.3rem;
+    .fa-bootstrap, .fa-js, .fa-github {
+        font-size: 2rem;
     }
 
     form {
