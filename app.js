@@ -1,24 +1,3 @@
-// typed animation script
-let typed = new Typed("#element", {
-    strings: ["Frontend Web Developer", "And a Youtuber"],
-    typeSpeed: 50,
-    backSpeed: 50,
-    loop: true, 
-});
-
-// slide in animation script
-const aboutSection = document.querySelector(".left");
-
-window.addEventListener('scroll', () => {
-    const sectionPosition = aboutSection.getBoundingClientRect();
-
-    if (sectionPosition.top <= window.innerHeight / 2) {
-        aboutSection.classList.add('active');
-    } else {
-        aboutSection.classList.remove('active');
-    }
-});
-
 // smooth scrolling script
 document.addEventListener('DOMContentLoaded', function () {
     const links = document.querySelectorAll('.navlinks a');
@@ -39,4 +18,25 @@ document.addEventListener('DOMContentLoaded', function () {
             behavior: 'smooth'
         });
     }
+});
+
+// typed animation script
+let typed = new Typed("#element", {
+    strings: ["Web Developer", "And Youtuber"],
+    typeSpeed: 50,
+    backSpeed: 50,
+    loop: true, 
+});
+
+// slide in animation script
+const aboutSection = document.querySelector(".left");
+
+window.addEventListener('scroll', () => {
+    const sectionPosition = aboutSection.getBoundingClientRect();
+
+    if (sectionPosition.top <= window.innerHeight / 2) {
+        aboutSection.classList.add('active');
+    } else {
+        aboutSection.classList.remove('active');
+    }
 });
