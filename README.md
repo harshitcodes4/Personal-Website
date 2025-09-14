@@ -1,3 +1,3 @@
-# Portfolio-Website
+# Personal-Website
 
-This project showcases a dynamic and user-friendly portfolio website created using frontend technologies, highlighting my web development skills.
+This project showcases a dynamic and user-friendly personal website created using frontend technologies, highlighting my web development skills.
