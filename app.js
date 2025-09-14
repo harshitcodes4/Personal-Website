@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 // typed animation script
 let typed = new Typed("#element", {
-    strings: ["Web Developer", "And Youtuber"],
+    strings: ["Freelancer", "Youtuber"],
     typeSpeed: 50,
     backSpeed: 50,
     loop: true, 
