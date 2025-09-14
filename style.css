@@ -7,7 +7,7 @@
     font-family: sans-serif, cursive;
 }
 
-/* nav styling */
+/* navbar styling */
 .nav {
     display: flex;
     align-items: center;
@@ -19,20 +19,16 @@
     width: 100%;
     z-index: 10;
 }
-
 .logo span {
     color: #9c27b0;
 }
-
 .navlinks {
     display: flex;
 }
-
 .navlinks li a {
     color: #fff;
     margin: 1rem;
 }
-
 .navlinks li a:hover {
     color: #9c27b0;
 }
@@ -46,23 +42,19 @@
     justify-content: space-evenly;
     padding: 8rem 4rem;
 }
-
 .featured-txt {
     width: 35rem;
 }
-
 .txt1 {
     font-size: 2.2rem;
 }
-
 .wave {
     animation-name: wave-animation; /* Refers to the name of your @keyframes element below */
     animation-duration: 2.5s; /* Change to speed up or slow down */
     animation-iteration-count: infinite; /* Never stop waving :) */
     transform-origin: 70% 70%; /* Pivot around the bottom-left palm */
     display: inline-block;
-  }
-
+}
 @keyframes wave-animation {
     0% { 
         transform: rotate( 0.0deg) 
@@ -89,16 +81,13 @@
         transform: rotate( 0.0deg) 
     }
 }
-
 .txt2 {
     font-size: 3.8rem;
 }
-
 .txt3 {
     font-size: 1.8rem;
     color: #9c27b0;
 }
-
 .download-btn {
     margin-top: 1rem;
     padding: 0.79rem; 
@@ -108,19 +97,15 @@
     font-weight: 700;
     cursor: pointer;                                                                                                       
 }
-
 .download-btn:hover {
     background-color: #921da7;
 }
-
 .download-btn a {
     color: #fff;
 }
-
 .image {
     width: 22rem;
 }
-
 img {
     width: 100%;
 }
@@ -132,45 +117,43 @@ img {
     background-image: linear-gradient(120deg, #9c27b0 30%, wheat 70%);
     padding: 7rem;
 }
-
 .about h2, .projects h2 {
     color: white;
     text-shadow: 1px 1px 1px #000;
 }
-
+.about p {
+    padding-right: 50px;
+    padding-left: 50px;
+}
 .left {
     text-align: center;
     line-height: 1.25rem;
     transform: translateX(-100%); /* Initially off-screen to the left */
     transition: transform 1s ease;
 }
-
 .active {
     transform: translateX(0); /* Slide in from the left */
 }
-
 .content {
     padding: 2rem 0;
 }
-
 .social-links {
     font-size: 1.5rem;
 }
-
 .social-links a {
     margin: 0.5rem;
 }
-
 .social-links i:hover {
     transform: scale(1.1);
 }
-
 .fa-youtube {
     color: red;
 }
-
 .fa-instagram {
-    color: orangered;
+    color: rgb(255, 0, 0);
+}
+.fa-linkedin {
+    color: rgb(0, 102, 255);
 }
 
 /* skills styling */
@@ -179,66 +162,53 @@ img {
     height: 100%;
     padding: 3.75rem;
 }
-
 .skills h2, .contact h2 {
     text-align: center;
     padding-bottom: 0.5rem;
 }
-
 h5 {
     text-align: center;
     font-weight: normal;
 }
-
 .skills .main {
     margin: 3rem auto 0;
 }
-
 .row1, .row2 {
     display: flex;
 }
-
 .col1, .col2, .col3, .col4 {
     padding: 0.75rem 0.75rem 0;
     width: 50%;
 }
-
 .col1, .col2 {
     padding-bottom: 0.75rem;
 }
-
 .fa-html5 {
     color: #E44D26;
     font-size: 2.7rem;
     margin-right: 0.25rem;
 }
-
 .fa-css3-alt {
     color: #1572B6;
     font-size: 2.7rem;
 }
-
 .fa-bootstrap {
     color: #563D7C;
     font-size: 2.5rem;
 }
-
 .fa-js {
     color: #F7DF1E;
     font-size: 2.5rem;
 }
-
 .fa-git-alt {
     color: #F05032;
     font-size: 2.7rem;
     margin-right: 0.25rem;
 }
-
 .fa-github {
     color: #181717;
     font-size: 2.5rem;
 }
-
 h4 {
     padding: 0.75rem 0;
 }
@@ -249,35 +219,29 @@ h4 {
     height: 100%;
     background-image: linear-gradient(120deg, #9c27b0 30%, wheat 70%);
 }
-
 .projects h2 {
     text-align: center;
     padding: 2rem 0;
 }
-
 .projects .line-one, .line-two {
     display: flex;
     justify-content: space-evenly;
     gap: 3rem;
     margin: 0 3rem 0;
 }
-
 .project-card {
     width: 22rem;
 }
-
 .card img {
     width: 100%;
     box-shadow: 0 0 20px #333;
     border-radius: 1rem;
     filter: blur();
 }
-
 .card img:hover {
     filter: none;
     transform: scale(1.03);
 }
-
 figcaption {
     font-weight: 500;
     margin-top: 0.75rem;
@@ -290,18 +254,15 @@ figcaption {
     height: 100%;
     padding: 3rem;
 }
-
 .msg {
     text-align: center;
 }
-
 form {
     max-width: 25rem;
     margin: 2rem auto 0;
     display: grid;
     gap: 1rem;
 }
-
 input, textarea {
     width: 25rem;
     padding: 0.5rem;
@@ -310,7 +271,6 @@ input, textarea {
     border-radius: 0.25rem;
     font-weight: 500;
 }
-
 .snd-btn {
     padding: 0.69rem;
     width: 6rem;
@@ -321,7 +281,6 @@ input, textarea {
     font-weight: 700;
     cursor: pointer;  
 }
-
 .snd-btn:hover {
     background-color: #921da7;
 }
@@ -333,7 +292,6 @@ input, textarea {
     color: #fff;
     padding: 1.5rem;
 }
-
 .footer a {
     color: #9c27b0;
 }
@@ -341,19 +299,16 @@ input, textarea {
 /* Customize the main scroll bar */
 ::-webkit-scrollbar {
     width: 12px; /* You can adjust the width as needed */
-}
-  
+} 
 /* Customize the thumb (draggable part) of the scroll bar */
 ::-webkit-scrollbar-thumb {
     background-color: #9c27b0; /* Change to your desired color */
     border-radius: 6px; /* Adjust the radius as needed */
 }
-  
 /* Customize the track (the non-draggable part) of the scroll bar */
 ::-webkit-scrollbar-track {
     background-color: #f2f2f2; /* Change to your desired color */
-}
-  
+} 
 /* Customize the corner where two scroll bars meet */
 ::-webkit-scrollbar-corner {
     background-color: transparent;
@@ -376,25 +331,21 @@ input, textarea {
     .download-btn {
         padding: 0.69rem;
     }
-
     .about {
         padding: 6rem;
     }
     .content {
         padding: 1.8rem 0;
     }
-
     .skills {
         padding: 3rem;
     }
     .skills .main {
         margin: 2.25rem auto 0;
     }
-
     .project-card {
         width: 18rem;
     }
-
     .contact {
         padding: 2rem;
     }
@@ -405,12 +356,10 @@ input, textarea {
         padding: 0.59rem;
     }
 }
-
 @media (max-width: 768px) {
     .navlinks li a {
         margin: 0.6rem;
     }
-    
     .hero {
         padding: 8rem 2rem;
     }
@@ -429,14 +378,12 @@ input, textarea {
     .download-btn {
         padding: 0.59rem;
     }
-    
     .about {
         padding: 4rem;
     }
     .content {
         padding: 1.6rem 0;
     }
-
     .skills {
         padding: 2.5rem 1rem;
     }
@@ -458,7 +405,6 @@ input, textarea {
     h4 {
         padding: 0.5rem 0;
     }
-
     .projects .line-one, .line-two {
         gap: 2rem;
         margin: 0 2rem 0;
@@ -466,7 +412,6 @@ input, textarea {
     figcaption span {
         display: none;
     }
-
     form {
         max-width: 22rem;
     }
@@ -479,12 +424,10 @@ input, textarea {
         width: 5rem;
     }
 }
-
 @media (max-width: 650px) {
     .navlinks {
         display: none;
     }
-
     .hero {
         flex-direction: column-reverse;
         padding: 6rem 2rem;
@@ -495,7 +438,6 @@ input, textarea {
     .image {
         width: 16rem;
     }
-
     .row1, .row2 {
         display: block;
     }
@@ -505,7 +447,6 @@ input, textarea {
     .col3 {
         padding-bottom: 0.5rem;
     }
-
     .projects h2 {
         padding: 1.75rem 0;
     }
@@ -521,7 +462,6 @@ input, textarea {
         margin-top: 0.5rem;
         margin-bottom: 1.75rem;
     }
-
     form {
         max-width: 20rem;
     }
@@ -529,12 +469,10 @@ input, textarea {
         width: 20rem;
     }
 }
-
 @media (max-width: 480px) {
     .nav {
         padding: 0.7rem;
     }
-
     .featured-txt {
         padding-left: 0.8rem;
         width: 19rem;
@@ -551,28 +489,24 @@ input, textarea {
     .download-btn {
         padding: 0.49rem;
     }
-
     .about {
         padding: 2rem;
     }
     .content {
         padding: 1.4rem 0;
     }
-
     .fa-html5, .fa-css3-alt, .fa-git-alt {
         font-size: 2.2rem;
     }
     .fa-bootstrap, .fa-js, .fa-github {
         font-size: 2rem;
     }
-
     form {
         max-width: 16rem;
     }
     input, textarea {
         width: 16rem;
     }
-
     .footer {
         padding: 1.2rem;
     }
